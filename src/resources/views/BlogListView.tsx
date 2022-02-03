@@ -1,16 +1,20 @@
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { Container, Row, Col } from 'react-bootstrap';
+import { listBlog } from '../../domain/blog/actions';
 import Blog from '../components/Blog';
 import Search from '../components/Search';
-
-const BLOG_SAMPLE = {
-	userId: 1,
-	id: 1,
-	title:
-		'sunt aut facere repellat provident occaecati excepturi optio reprehenderit',
-	body: 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto',
-};
+import useTypedSelector from '../../core/hooks/useTypedSelector';
 
 const BlogListView = () => {
+	const dispatch = useDispatch();
+
+	const { loading, data } = useTypedSelector(state => state.blog);
+
+	useEffect(() => {
+		dispatch(listBlog());
+	}, [dispatch]);
+
 	return (
 		<div className='blog py-5'>
 			<Container fluid>
@@ -31,11 +35,13 @@ const BlogListView = () => {
 				</Row>
 
 				<Row className='mt-5'>
-					{[1, 2, 3, 4, 5, 6, 7, 8].map((_, key) => (
-						<Col md={6} className='mb-4'>
-							<Blog key={key} data={{ ...BLOG_SAMPLE, id: key }} />
-						</Col>
-					))}
+					{loading
+						? null
+						: data.map((data, key) => (
+								<Col md={6} className='mb-4'>
+									<Blog key={key} data={data} />
+								</Col>
+						  ))}
 				</Row>
 			</Container>
 		</div>

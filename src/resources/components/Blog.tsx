@@ -1,10 +1,10 @@
 import React from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 import { trimText } from '../../core/helpers/utils';
-import { IBlog } from '../../core/interface/blog';
+import { BlogInterface } from '../../domain/blog/interfaces';
 
 type Props = {
-	data: IBlog;
+	data: BlogInterface;
 };
 
 const Blog = ({ data }: Props) => {
@@ -17,6 +17,8 @@ const Blog = ({ data }: Props) => {
 							background: `url(https://picsum.photos/300?random=${data.id}) no-repeat`,
 							backgroundSize: 'cover',
 							backgroundPosition: 'center',
+							width: '100%',
+							height: '100%',
 						}}
 						className='image'
 					></div>
