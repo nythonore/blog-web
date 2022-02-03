@@ -1,9 +1,9 @@
 # Blog Posts
 
 This repository contains code for Blog Posts in React & Redux TypeScript and Bootstrap.\
-view demo: https://whatsapp.nythonore.me
+view demo: https://xenodochial-ramanujan-51ccad.netlify.app/
 
-![alt text](https://nythonore.me/work/whatsapp.png)
+![alt text](https://res.cloudinary.com/elab/image/upload/v1643891926/nythonore/ciojsbgfvi2ubtz5u8bm.png)
 
 ### Prerequisites
 
