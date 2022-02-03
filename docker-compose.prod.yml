@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    container_name: mlabs-blog-web-prod
+    image: mlabs-blog-web-prod
+    build:
+      context: .
+      target: production
+      dockerfile: ./Dockerfile.prod
+    ports:
+      - 80:80
