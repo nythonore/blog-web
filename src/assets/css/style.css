@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body {
+	width: 100%;
+	height: 100%;
+	color: #00001f;
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.5;
+	background: #1a1a1a;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h6 {
+	margin: 0;
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+.font-sz-24 {
+	font-size: 24px;
+}
+
+.font-sz-21 {
+	font-size: 21px;
+}
+
+.font-sz-18 {
+	font-size: 18px;
+}
+
+.font-sz-16 {
+	font-size: 16px;
+}
+
+.font-sz-14 {
+	font-size: 14px;
+}
+
+.font-sz-12 {
+	font-size: 12px;
+}
+
+.font-wg-700 {
+	font-weight: 700;
+}
+
+.font-wg-600 {
+	font-weight: 600;
+}
+
+.font-wg-500 {
+	font-weight: 500;
+}
+
+.font-wg-400 {
+	font-weight: 400;
+}
+
+.font-wg-300 {
+	font-weight: 300;
+}
+
+.blog .container-fluid {
+	padding: 0 60px;
+}
+
+.blog-card .image-card {
+	padding-right: 0 !important;
+}
+
+.blog-card .image-card .image {
+	border-radius: 8px 0 0 8px;
+}
+
+.blog-card .content-card {
+	padding-left: 0 !important;
+}
+
+.blog-card .content-card .bg-white {
+	border-radius: 0 8px 8px 0;
+}
+
+.blog-card .image {
+	width: 100%;
+	height: 100%;
+}
+
+.blog-card .user-card img {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+}
+
+@media screen and (max-width: 991px) {
+	.blog .container-fluid {
+		padding: 0 20px;
+	}
+
+	.blog .title {
+		margin-bottom: 15px;
+	}
+
+	.blog-card .image-card {
+		padding-right: 12px !important;
+	}
+
+	.blog-card .image-card {
+		width: 100%;
+		height: 300px;
+	}
+
+	.blog-card .content-card {
+		padding-left: 12px !important;
+	}
+
+	.blog-card .image-card .image {
+		border-radius: 0 0 0 0;
+	}
+
+	.blog-card .content-card .bg-white {
+		border-radius: 0 0 0 0;
+	}
+}
+
+.quick-search .form-control {
+	height: 50px;
+	font-size: 14px;
+	border-radius: 22px;
+	text-indent: 15px;
+	background: transparent;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+}
+
+.quick-search .form-control::placeholder {
+	color: #ffffff;
+}
