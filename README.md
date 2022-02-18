@@ -1,9 +1,9 @@
 # Blog Posts
 
 This repository contains code for Blog Posts in React & Redux TypeScript and Bootstrap.\
-view demo: https://xenodochial-ramanujan-51ccad.netlify.app/
+view demo: https://blog-ui.nythonore.me
 
-![alt text](https://res.cloudinary.com/elab/image/upload/v1643891926/nythonore/ciojsbgfvi2ubtz5u8bm.png)
+![alt text](https://nythonore.me/work/blog.png)
 
 ### Prerequisites
 
@@ -17,11 +17,11 @@ Docker version 20.10.7, build f0df350
 ### Installing
 
 ```
-$ git clone https://github.com/nythonore/mlabs-blog.git
+$ git clone https://github.com/nythonore/blog-ui.git
 ```
 
 ```
-$ cd mlabs-blog
+$ cd blog-ui
 ```
 
 ```
@@ -29,7 +29,7 @@ $ docker-compose -f docker-compose.prod.yml build
 ```
 
 ```
-$ docker run -p 3000:80 --name mlabs-web mlabs-web
+$ docker run -p 3000:80 --name blog-ui blog-ui
 ```
 
 Go to [http://localhost:3000](http://localhost:3000)
