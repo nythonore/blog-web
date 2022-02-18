@@ -1,4 +1,4 @@
-# Blog Posts
+# Dark Theme Blog UI
 
 This repository contains code for Blog Posts in React & Redux TypeScript and Bootstrap.\
 view demo: https://blog-ui.nythonore.me
