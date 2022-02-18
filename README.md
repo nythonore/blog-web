@@ -3,7 +3,7 @@
 This repository contains code for Blog in React & Redux TypeScript and Bootstrap.\
 view demo: https://blog-ui.nythonore.me
 
-![alt text](https://nythonore.me/work/blog.png)
+![alt text](https://res.cloudinary.com/elab/image/upload/v1650554141/nythonore/works/ofmpdglicazighov2k8o.png)
 
 ### Prerequisites
 
