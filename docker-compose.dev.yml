@@ -2,8 +2,8 @@ version: '3.8'
 
 services:
   web:
-    container_name: mlabs-blog-web-dev
-    image: mlabs-blog-web-dev
+    container_name: blog-ui-dev
+    image: blog-ui-dev
     build:
       context: .
       target: development
