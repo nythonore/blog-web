@@ -2,8 +2,8 @@ version: '3.8'
 
 services:
   web:
-    container_name: mlabs-blog-web-prod
-    image: mlabs-blog-web-prod
+    container_name: blog-ui-prod
+    image: blog-ui-prod
     build:
       context: .
       target: production
